@@ -139,7 +139,6 @@ outline: none;
 
 /* Style the dropdown button */
 .dropbtn {
-background-color: #f8f8f8;
 color: #333;
 font-size: 16px;
 border: none;
@@ -838,7 +837,6 @@ animation-fill-mode: forwards;
     flex-direction: column;
     align-items: flex-end;
     padding: 40px;
-    border-right: solid 1px rgb(211, 211, 211);
     justify-content: space-between;
 }
 .top11-bottom-middle{
@@ -849,11 +847,8 @@ animation-fill-mode: forwards;
     align-items: center;
     padding: 40px;
     border-right: solid 1px rgb(211, 211, 211);
+    border-left: solid 1px rgb(211, 211, 211);
     justify-content: space-between;
-}
-.top11-bottom-right{
-    width: 30%;
-    height: 400px;
 }
 .top11-bottom-left p a{
     margin: 0px;
@@ -895,7 +890,6 @@ animation-fill-mode: forwards;
     flex-direction: column;
     align-items: flex-start;
     padding: 40px;
-    border-right: solid 1px rgb(211, 211, 211);
     justify-content: space-between;
 }
 .top11-bottom-right p a{
