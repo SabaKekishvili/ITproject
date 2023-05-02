@@ -852,8 +852,6 @@ background-color: #ddd;
     border: 2px solid transparent;
     border-radius: 20px;
     background-clip: padding-box;
-    -webkit-border-image: linear-gradient(to right, #FFA500, #FFFF00) 30;
-    border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
   
     /* Add animation to the border */
     animation-name: pulsate;
@@ -871,15 +869,6 @@ background-color: #ddd;
   }
   
   @keyframes pulsate {
-    0% {
-      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
-    }
-    50% {
-      border-image: linear-gradient(to right,  #FF0000, #FFA500, #FFFF00,) 30;
-    }
-    100% {
-      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00,) 30;
-    }
     from {
         left: -400px;
       }
