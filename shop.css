@@ -300,13 +300,14 @@ background-color: #ddd;
 }
 .parentof-p{
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
     height: fit-content;
-    width: 40%;
+    width: 100%;
     margin: 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .top5-cards-content{
     padding-top: 10px;
@@ -511,16 +512,6 @@ background-color: #ddd;
     background: #274C5B;
     border-radius: 8px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.parentof-p{
-    padding-left: 10px;
-    padding-top: 20px;
-    height: fit-content;
-    width: 40%;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .top5-cards-content{
     padding-top: 10px;
@@ -840,3 +831,91 @@ background-color: #ddd;
     border: solid 1px greenyellow;
     border-radius: 50%;
 }
+.sale, #Box {
+    position: fixed;
+    z-index: 9999;
+    left: -400px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  
+    /* Add rainbow gradient border */
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+    -webkit-border-image: linear-gradient(to right, #FFA500, #FFFF00) 30;
+    border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
+  
+    /* Add animation to the border */
+    animation-name: pulsate;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      left: -400px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  
+  @keyframes pulsate {
+    0% {
+      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
+    }
+    50% {
+      border-image: linear-gradient(to right,  #FF0000, #FFA500, #FFFF00,) 30;
+    }
+    100% {
+      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00,) 30;
+    }
+    from {
+        left: -400px;
+      }
+      to {
+        left: 0px;
+      }
+  }
+  .parentof-p button{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    background: #274C5B;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .sale:hover {
+    width: 260;
+    height: 410px;
+    text-decoration: none;
+  }
+  
+  .parentof-p p {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    background: #274C5B;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

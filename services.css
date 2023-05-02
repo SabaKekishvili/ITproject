@@ -593,3 +593,6 @@ background-color: #ddd;
         border: none;
     }
 }
+.close-btn{
+    z-index: 999;
+}

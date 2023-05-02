@@ -745,6 +745,7 @@ background-color: #ddd;
 }
 .parentof-p{
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
     height: fit-content;
     width: 100%;
@@ -1946,5 +1947,189 @@ background-color: #ddd;
     .top6-counters img{
         width: 90px;
         height: 90px;
+    }
+}
+.sale, #Box {
+    position: fixed;
+    z-index: 9999;
+    left: -400px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  
+    /* Add rainbow gradient border */
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-clip: padding-box;
+    -webkit-border-image: linear-gradient(to right, #FFA500, #FFFF00) 30;
+    border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
+  
+    /* Add animation to the border */
+    animation-name: pulsate;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      left: -400px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  
+  @keyframes pulsate {
+    0% {
+      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00) 30;
+    }
+    50% {
+      border-image: linear-gradient(to right,  #FF0000, #FFA500, #FFFF00,) 30;
+    }
+    100% {
+      border-image: linear-gradient(to right, #FF0000, #FFA500, #FFFF00,) 30;
+    }
+    from {
+        left: -400px;
+      }
+      to {
+        left: 0px;
+      }
+  }
+  .parentof-p button{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    background: #274C5B;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .sale:hover {
+    width: 260;
+    height: 410px;
+    text-decoration: none;
+  }
+  
+  .parentof-p p {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    background: #274C5B;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+@media only screen and (max-width: 391px){
+    .top3-left-card,.top3-right-card{
+        width: 90%;
+    }
+    .top3-left{
+        width: 100%;
+    }
+    .top3-right{
+        width: 100%;
+    }
+    .top2{
+        height: 50vh;
+    }
+    .top2-background{
+        height: 50vh;
+    }
+    .top2-background img{
+        height: 50vh;
+    }
+    .header-son{
+        height: 100px;
+    }
+    .top2-image img{
+        height: 50vh;
+    }
+    .top2-image{
+        height: 50vh;
+    }
+    .top2-title{
+        width: 100%;
+    }
+    .top2-content{
+        align-items: center;
+    }
+    .top2-title h6{
+        font-size: 40px;
+        width: 100%;
+    }
+    .top4{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .top4-right{
+        width: 90%;
+    }
+    .top4-p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top4-right-parent{
+        width: 100%;
+    }
+    .top4-h2{
+        font-size: 20px;
+    }
+    .top4-p1{
+        width: auto;
+        text-align: center;
+    }
+    .top4-organic img{
+        display: none;
+    }
+    .top4-quality img{
+        display: none;
+    }
+    .top5-cards{
+        width: 100%;
+    }
+    .top5-row1{
+        width: 100%;
+    }
+    .top5-son{
+        width: 95%;
+    }
+    .top5-cards-son{
+        height: 250px;
+    }
+    .top5-cards-img3 img,.top5-cards-img2 img,.top5-cards-img1 img,.top5-cards-img img{
+        height: 100px;
+    }
+    .top5-cards-img3,.top5-cards-img2,.top5-cards-img1,.top5-cards-img {
+        height: 100px;
+    }
+    .cards-paragraph h5{
+        font-size: 10px;
+        width: 100%;
+    }
+    .rating-price{
+        width: 50px;
+    }
+    .price del{
+        font-size: 10px;
     }
 }

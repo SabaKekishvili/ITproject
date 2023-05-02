@@ -229,18 +229,30 @@
     });
 
     const button1 = document.querySelector(".info-butt1");
-  const button2 = document.querySelector(".info-butt2");
-  const text1 = document.querySelector(".text1");
-  const text2 = document.querySelector(".text2");
+    const button2 = document.querySelector(".info-butt2");
+    const h = document.querySelector(".info-butt1 h4");
+    const h2= document.querySelector(".info-butt2 h4");
 
-  button1.addEventListener("click", function() {
-    text1.style.display = "block";
-    text2.style.display = "none";
-  });
 
-  button2.addEventListener("click", function() {
-    text1.style.display = "none";
-    text2.style.display = "block";
-  });
+    const text1 = document.querySelector(".text1");
+    const text2 = document.querySelector(".text2");
+
+    button1.addEventListener("click", function() {
+        button1.style.background = "#274C5B";
+        button2.style.background = "#EFF6F1";
+        text1.style.display = "block";
+        text2.style.display = "none";
+        h2.style.color = "#274C5B";
+        h.style.color = "white"
+    });
+
+    button2.addEventListener("click", function() {
+        button2.style.background = "#274C5B";
+        button1.style.background = "#EFF6F1";
+        text1.style.display = "none";
+        text2.style.display = "block";
+        h.style.color = "#274C5B";
+        h2.style.color="white"
+    });
     </script>
 </body>

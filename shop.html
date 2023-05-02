@@ -14,6 +14,28 @@
 </head>
 <body>
     <div class="homepage">
+        <div id="Box" class="sale">
+            <div class="parentof-p d-flex justify-content-between">
+                <p>Super Sale</p>
+                <button class="close-btn">X</button>
+            </div>
+            <div class="top5-cards-img1">
+                <img width="100%" height="100%" src="images/bean.png">
+            </div>
+            <a href="beans.html" class="top5-cards-content">
+                <div class="cards-paragraph d-flex justify-content-center">
+                    <h5 class="text-decoration-none">Mung Beans</h5>
+                    <div class="space"></div>
+                    <div class="top5-rating">
+                        <div class="rating-price">
+                            <span class="price1"><del>$20.00</del></span>
+                            <span class="price2">$10.00</span>
+                        </div>
+                        <div class="rating-star"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="header-son row d-flex">
             <div class="col-1"></div>
             <div class="left col-6 d-flex justify-content-between">
@@ -351,6 +373,10 @@
         dropdownContent.style.display = 'block';
       }
     });
+
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.querySelector('.sale').style.display = 'none';
+        });
     </script>
 </body>
 </html>

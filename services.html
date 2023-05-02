@@ -157,7 +157,7 @@
     <script>
         let playButton = document.getElementById('play-button');
         let video = document.getElementById('my-video');
-        let pauseButton = document.getElementById('pause-button');
+        let close1 = document.querySelector('.close-btn');
 
 
         playButton.addEventListener('click', function() {
@@ -174,6 +174,8 @@
         video.style.display = 'block';
         video.play();
         playButton.style.display = 'none';
+        close1.style.display = 'block';
+
         });
 
         document.querySelector('.dropbtn').addEventListener('click', function() {
